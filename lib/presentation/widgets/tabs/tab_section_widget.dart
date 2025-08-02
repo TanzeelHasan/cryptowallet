@@ -38,16 +38,16 @@ class _TabSectionWidgetState extends State<TabSectionWidget> {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Image.asset(
-                  icons[index],
-                  width: AppScreenUtil.w(20),
-                  color: _selectedIndex == index ? Colors.blue : Colors.grey,
-                ),
+                // Image.asset(
+                //   icons[index],
+                //   width: AppScreenUtil.w(20),
+                //   color: _selectedIndex == index ? Colors.blue : Colors.grey,
+                // ),
                 SizedBox(width: AppScreenUtil.w(6)),
                 Text(
                   tabs[index],
                   style: AppStyles.tabLabel.copyWith(
-                    color: _selectedIndex == index ? Colors.blue : Colors.grey,
+                    color: _selectedIndex == index ? Colors.black : Colors.grey,
                   ),
                 ),
               ],

@@ -18,12 +18,12 @@ class ActionButtonWidget extends StatelessWidget {
           padding: EdgeInsets.all(AppScreenUtil.w(10)),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: Colors.grey[100],
+            color: Colors.transparent,
           ),
-          child: Image.asset(icon, width: AppScreenUtil.w(24), height: AppScreenUtil.h(24)),
+          child: Image.asset(icon, width: AppScreenUtil.w(83), height: AppScreenUtil.h(83)),
         ),
         SizedBox(height: AppScreenUtil.h(6)),
-        Text(label, style: AppStyles.serviceLabel),
+        // Text(label, style: AppStyles.serviceLabel),
       ],
     );
   }

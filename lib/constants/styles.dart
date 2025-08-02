@@ -30,7 +30,7 @@ class AppStyles {
   );
 
   static TextStyle tabLabel = TextStyle(
-    fontSize: AppScreenUtil.sp(14),
+    fontSize: AppScreenUtil.sp(16),
     fontWeight: FontWeight.w500,
     color: Colors.grey[700],
   );

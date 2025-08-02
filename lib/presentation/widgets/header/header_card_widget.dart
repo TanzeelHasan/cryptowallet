@@ -20,6 +20,7 @@ class HeaderCardWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
+
           Padding(
             padding: EdgeInsets.all(AppScreenUtil.w(12)),
             child: CircleAvatar(
@@ -28,16 +29,16 @@ class HeaderCardWidget extends StatelessWidget {
               child: Icon(Icons.person, size: AppScreenUtil.w(30), color: Colors.white),
             ),
           ),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Welcome back,", style: AppStyles.title),
-                Text("John Doe", style: AppStyles.subtitle),
-              ],
-            ),
-          ),
+          // Expanded(
+          //   child: Column(
+          //     crossAxisAlignment: CrossAxisAlignment.start,
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: [
+          //       Text("Welcome back,", style: AppStyles.title),
+          //       Text("John Doe", style: AppStyles.subtitle),
+          //     ],
+          //   ),
+          // ),
         ],
       ),
     );

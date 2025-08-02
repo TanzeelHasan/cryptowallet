@@ -53,14 +53,17 @@ class WalletDashboardScreen extends StatelessWidget {
           SizedBox(height: AppScreenUtil.h(16)),
           WalletSummaryWidget(wallet: wallet),
           SizedBox(height: AppScreenUtil.h(16)),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: const [
-              ActionButtonWidget(icon: AppAssets.receive, label: "Receive"),
-              ActionButtonWidget(icon: AppAssets.send, label: "Send"),
-              ActionButtonWidget(icon: AppAssets.swap, label: "Swap"),
-              ActionButtonWidget(icon: AppAssets.buy, label: "Buy"),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+                ActionButtonWidget(icon: AppAssets.receive, label: "Receive"),
+                ActionButtonWidget(icon: AppAssets.send, label: "Send"),
+                ActionButtonWidget(icon: AppAssets.swap, label: "Swap"),
+                ActionButtonWidget(icon: AppAssets.buy, label: "Buy"),
+              ],
+            ),
           ),
           SizedBox(height: AppScreenUtil.h(24)),
           const TabSectionWidget(),

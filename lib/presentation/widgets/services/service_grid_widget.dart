@@ -21,26 +21,25 @@ class ServiceGridWidget extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
-        crossAxisSpacing: AppScreenUtil.w(16),
-        mainAxisSpacing: AppScreenUtil.h(16),
+        crossAxisSpacing: AppScreenUtil.w(6),
+        mainAxisSpacing: AppScreenUtil.h(6),
         childAspectRatio: 1.0,
       ),
       itemCount: services.length,
       itemBuilder: (context, index) {
         final item = services[index];
         return Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.all(AppScreenUtil.w(12)),
               decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.grey[100],
+                // shape: BoxShape.circle,
+                color: Colors.white,
               ),
-              child: Image.asset(item['icon']!, width: AppScreenUtil.w(24)),
+              child: Image.asset(item['icon']!, width: AppScreenUtil.w(101)),
             ),
-            SizedBox(height: AppScreenUtil.h(8)),
-            Text(item['label']!, style: AppStyles.serviceLabel),
+            SizedBox(height: AppScreenUtil.h(1)),
+            // Text(item['label']!, style: AppStyles.serviceLabel),
           ],
         );
       },

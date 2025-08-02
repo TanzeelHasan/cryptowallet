@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:walletui/constants/strings.dart';
 import 'package:walletui/domain/entities/wallet.dart';
 
+import '../../../constants/assets.dart';
 import '../../../constants/styles.dart';
 import '../../../utils/screen_util.dart';
 
@@ -24,6 +25,35 @@ class WalletSummaryWidget extends StatelessWidget {
             Text(wallet.balance, style: AppStyles.balanceAmount),
             SizedBox(width: AppScreenUtil.w(4)),
             Text(wallet.currency, style: AppStyles.balanceCurrency),
+            Spacer(),
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Image.asset(
+                    AppAssets.history,
+                    width: AppScreenUtil.w(24),
+                    height: AppScreenUtil.h(24),
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Image.asset(
+                    AppAssets.globe,
+                    width: AppScreenUtil.w(24),
+                    height: AppScreenUtil.h(24),
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Image.asset(
+                    AppAssets.user,
+                    width: AppScreenUtil.w(32),
+                    height: AppScreenUtil.h(32),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ],

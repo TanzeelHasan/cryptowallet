@@ -1,6 +1,11 @@
 class AppAssets {
   static const String banner = 'assets/images/banner_bg.png';
 
+  // Wallet Icons
+  static const String history = 'assets/icons/history.png';
+  static const String globe = 'assets/icons/globe.png';
+  static const String user = 'assets/icons/user.png';
+
   // Action Icons
   static const String receive = 'assets/icons/receive.png';
   static const String send = 'assets/icons/send.png';
