@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:walletui/constants/assets.dart';
+import '/constants/assets.dart';
 
 import '../../../constants/styles.dart';
+import '../../../constants/strings.dart';
+
 import '../../../utils/screen_util.dart';
 
 class HeaderCardWidget extends StatelessWidget {
@@ -13,32 +15,25 @@ class HeaderCardWidget extends StatelessWidget {
       height: AppScreenUtil.h(120),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppScreenUtil.w(12)),
-        image: const DecorationImage(
-          image: AssetImage(AppAssets.banner),
-          fit: BoxFit.cover,
-        ),
+        color: Color(0x80F2F2F9),
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-
-          Padding(
-            padding: EdgeInsets.all(AppScreenUtil.w(12)),
-            child: CircleAvatar(
-              radius: AppScreenUtil.w(30),
-              backgroundColor: Colors.white.withOpacity(0.3),
-              child: Icon(Icons.person, size: AppScreenUtil.w(30), color: Colors.white),
+          SizedBox(width: AppScreenUtil.w(6)),
+          Container(
+            height: AppScreenUtil.h(110),
+            width: AppScreenUtil.w(110),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppScreenUtil.w(12)),
+              image: const DecorationImage(
+                image: AssetImage(AppAssets.banner),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
-          // Expanded(
-          //   child: Column(
-          //     crossAxisAlignment: CrossAxisAlignment.start,
-          //     mainAxisAlignment: MainAxisAlignment.center,
-          //     children: [
-          //       Text("Welcome back,", style: AppStyles.title),
-          //       Text("John Doe", style: AppStyles.subtitle),
-          //     ],
-          //   ),
-          // ),
+          SizedBox(width: AppScreenUtil.w(20)),
+          Text(AppStrings.header, style: AppStyles.header),
         ],
       ),
     );

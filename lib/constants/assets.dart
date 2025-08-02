@@ -1,5 +1,5 @@
 class AppAssets {
-  static const String banner = 'assets/images/banner_bg.png';
+  static const String banner = 'assets/images/banner_bg_1.png';
 
   // Wallet Icons
   static const String history = 'assets/icons/history.png';

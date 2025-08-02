@@ -39,4 +39,10 @@ class AppStyles {
     fontSize: AppScreenUtil.sp(12),
     color: Colors.grey[700],
   );
+
+  static TextStyle header = TextStyle(
+    fontSize: AppScreenUtil.sp(12),
+    color: Colors.black,
+  );
+
 }
